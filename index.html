@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JLR Print Studio - Impresión de Documentos y Fotos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<header>
+  <div class="logo">
+    <img src="imagenes/logo.png" alt="JLRPrintStudio Logo">
+	<span class="logo-text">JLR Print Studio</span>
+  </div>
+
+  <!-- Botón hamburguesa -->
+  <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="precios.html">Precios</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Impresión de Documentos y Fotos</h2>
+    <p>Calidad profesional en cada impresión. Rápido, confiable y a tu alcance.</p>
+    <a href="precios.html"><button>Ver Precios</button></a>
+  </section>
+
+  <!-- Catálogo -->
+  <section class="section" id="servicios">
+    <h3>Nuestros Servicios</h3>
+    <div class="servicios">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png" alt="Documentos">
+        <h4>Impresión de Documentos</h4>
+        <p>Imprime tus archivos con la mejor calidad en blanco y negro o a color.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3342/3342137.png" alt="Fotos">
+        <h4>Impresión de Fotos</h4>
+        <p>Fotografías nítidas en diferentes tamaños y acabados.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892646.png" alt="Posters">
+        <h4>Pósters y Banners</h4>
+        <p>Ideal para publicidad, eventos y presentaciones.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1067/1067566.png" alt="Personalizados">
+        <h4>Impresiones Personalizadas</h4>
+        <p>Tazas, camisetas y otros productos con tus diseños únicos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section class="section" id="galeria">
+    <h3>Galería de Trabajos</h3>
+    <div class="galeria">
+      <img src="https://picsum.photos/400/300?random=1" alt="Trabajo 1">
+      <img src="https://picsum.photos/400/300?random=2" alt="Trabajo 2">
+      <img src="https://picsum.photos/400/300?random=3" alt="Trabajo 3">
+      <img src="https://picsum.photos/400/300?random=4" alt="Trabajo 4">
+      <img src="https://picsum.photos/400/300?random=5" alt="Trabajo 5">
+      <img src="https://picsum.photos/400/300?random=6" alt="Trabajo 6">
+    </div>
+  </section>
+
+  <!-- Información del negocio -->
+  <section class="section" id="nosotros">
+    <h3>Sobre Nosotros</h3>
+    <p class="texto">
+      En <b>JLRPrint Studio</b> nos especializamos en ofrecer servicios de impresión de alta calidad para documentos, fotos y productos personalizados. 
+      Nuestro compromiso es brindar rapidez, calidad y precios justos a cada cliente.
+    </p>
+  </section>
+
+  <!-- Contacto -->
+  <section class="section" id="contacto">
+    <h3>Contacto</h3>
+    <p class="texto">📍 Dirección: Edificio 115, apt 5, Melilla, Rafael Freyre, Holguín</p>
+    <p class="texto">📞 Teléfono: +53 58160709</p>
+    <p class="texto">✉️ Email: jorgeluisramirezlorenzogmail.com</p>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 JLRPrintStudio - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+<script>
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const navbar = document.querySelector(".navbar");
+
+  toggleBtn.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+  });
+</script>

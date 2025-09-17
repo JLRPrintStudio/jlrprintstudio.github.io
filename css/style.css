@@ -1,0 +1,259 @@
+/* Reset y básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  align-items: center; /* Centra verticalmente la imagen y el texto */
+  gap: 10px;           /* Espacio entre el logo y el nombre */
+}
+
+.logo {
+  height: 50px;        /* Ajusta el tamaño del logo */
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;         /* Color del texto */
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* Encabezado */
+/* Estilos básicos del header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e3a8a;
+  padding: 10px 20px;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+/* Menú normal (desktop) */
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #facc15;
+}
+
+/* Botón hamburguesa (oculto en desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ------- Versión Móvil ------- */
+@media (max-width: 768px) {
+  /* Ocultar menú normal */
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #1e3a8a;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  /* Mostrar hamburguesa */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Clase activa para mostrar menú */
+  .navbar.active {
+    display: block;
+  }
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #1e3a8a, #2563eb);
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background: white;
+  color: #1e3a8a;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #f3f4f6;
+}
+
+/* Secciones */
+.section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #1e3a8a;
+}
+
+.texto {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Catálogo */
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+/* Galería */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Footer */
+footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* Tabla de precios */
+.tabla-precios {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tabla-precios thead {
+  background: #1e3a8a;
+  color: white;
+}
+
+.tabla-precios th,
+.tabla-precios td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabla-precios tbody tr:hover {
+  background: #f3f4f6;
+}
+
+.tabla-precios thead th {
+  background-color: #1e3a8a;
+  color: #fff;
+}
+
+.tabla-precios th {
+  font-size: 1.1rem;
+}
